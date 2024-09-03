@@ -164,3 +164,9 @@ class CacheActivationsRunner:
         self.activations_store.save_buffer(
             shuffled_buffer2, f"{datapath}/{buffer_idx2}.{self.file_extension}"
         )
+
+        del buffer1
+        del buffer2
+        del joint_buffer 
+        del shuffled_buffer1
+        del shuffled_buffer2
